@@ -48,21 +48,21 @@ body {
 
 /* Main Content */
 main {
-    display: flex; /* Flexbox for horizontal alignment */
-    align-items: center; /* Vertically center the content */
-    justify-content: center; /* Center the content horizontally if needed */
-    gap: 20px; /* Add spacing between the image and text */
-    padding: 20px; /* Add padding around the main content */
-    height: 85vh; /* Set the height of the main section */
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    gap: 20px; 
+    padding: 20px; 
+    height: 85vh; 
 }
 
 /* Image Styling */
 main img {
-    width: 40%; /* Adjust the image width */
-    height: auto; /* Maintain the aspect ratio */
-    border-radius: 10px; /* Optional: Add rounded corners to the image */
-    object-fit: cover; /* Ensure the image fills the container nicely */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+    width: 40%; 
+    height: auto; 
+    border-radius: 10px;
+    object-fit: cover; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Text Container (h2 and p) */
@@ -76,7 +76,7 @@ main p {
     font-size: 1rem;
     line-height: 1.6;
     color: #555;
-    text-align: justify; /* Justify the paragraph text */
+    text-align: justify; 
 }
 
 /* Footer */

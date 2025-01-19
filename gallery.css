@@ -46,10 +46,10 @@ body {
     color: black !important;
 }
 
-/* Main content area */
+/* Main content */
 main {
-    padding: 20px; /* Add padding around the gallery */
-    background-color: #f8f8f8; /* Optional: Light background for contrast */
+    padding: 20px; 
+    background-color: #f8f8f8; 
 }
 
 .text {
@@ -61,28 +61,27 @@ main {
   
 /* Gallery Grid */
 .gallery {
-    display: grid; /* Use CSS Grid for layout */
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive column sizes */
-    gap: 15px; /* Space between photos */
-    justify-items: center; /* Center items horizontally */
-    align-items: center; /* Center items vertically */
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 15px; 
+    justify-items: center; 
+    align-items: center; 
 }
 
-/* Individual Images */
+/* Images */
 .gallery img {
-    width: 100%; /* Make each photo fill its grid cell */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 8px; /* Optional: Add rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
-    background-color: white; /* Optional: White background for photos */
-    padding: 5px; /* Create a white "border" effect */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+    width: 100%; 
+    height: auto; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    background-color: white; 
+    padding: 5px; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
 }
 
-/* Hover Effect */
 .gallery img:hover {
-    transform: scale(1.05); /* Slight zoom effect */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+    transform: scale(1.05); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
 }
 
 /* Footer */

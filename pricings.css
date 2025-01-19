@@ -46,35 +46,35 @@ body {
     color: black !important;
 }
 
-/* Main content area */
+/* Main */
 main {
-    padding: 20px; /* Add padding around the gallery */
-    background-color: #f8f8f8; /* Optional: Light background for contrast */
+    padding: 20px; 
+    background-color: #f8f8f8; 
 }
 
 /* Pricing container */
 .prices {
     display: grid;
-    grid-template-rows: repeat(4, 1fr); /* 4 rows, each taking equal space */
-    gap: 40px; /* Space between rows */
-    margin-bottom: 50px; /* Add some bottom margin for the last row */
+    grid-template-rows: repeat(4, 1fr); 
+    gap: 40px; 
+    margin-bottom: 50px; 
 }
 
 /* Price Row */
 .price-row {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Two equal-width columns (image + text) */
-    gap: 20px; /* Space between image and text */
-    align-items: center; /* Vertically center content */
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px; 
+    align-items: center; 
 }
 
 /* Image Styling */
 .image img {
     width: 90%;
-    height: 400px; /* Ensure the images are the same size */
-    object-fit: cover; /* Make the image cover the area without distortion */
-    border-radius: 8px; /* Optional: Add rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    height: 400px; 
+    object-fit: cover; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
 /* Text Styling */
@@ -82,7 +82,7 @@ main {
     width: 90%;
     height: auto;
     display: flex;
-    flex-direction: column; /* Stack the heading and paragraph vertically */
+    flex-direction: column; 
     justify-content: center;
 }
 
@@ -106,32 +106,32 @@ main {
 
 /* Contact container */
 .contact {
-    position: relative; /* This will be the positioning context for the text */
-    width: 100%; /* Ensure the container takes full width */
+    position: relative; 
+    width: 100%; 
 }
 
 /* Contact text styling */
 .contact-text {
     letter-spacing: 2px;
-    position: absolute; /* Position text on top of the image */
-    top: 50%; /* Vertically center the text */
-    left: 50%; /* Horizontally center the text */
-    transform: translate(-50%, -50%); /* Ensure perfect centering */
-    color: black; /* White text for contrast */
-    text-align: center; /* Center the text */
-    font-size: 2rem; /* Adjust font size */
-    font-weight: bold; /* Make the text bold */
-    padding: 10px; /* Add some padding around the text */
-    border-radius: 5px; /* Optional: Rounded corners for the background */
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    color: black; 
+    text-align: center; 
+    font-size: 2rem; 
+    font-weight: bold; 
+    padding: 10px; 
+    border-radius: 5px; 
 }
 
 /* Image styling */
 .contact img {
-    width: 100%; /* Make the image fill the width of its container */
-    height: 300px; /* Set the image height to 400px */
-    object-fit: cover; /* Ensure the image covers the space without distortion */
-    border-radius: 5px; /* Optional: Rounded corners for the image */
-    transition: opacity 0.3s ease; /* Smooth transition effect */
+    width: 100%; 
+    height: 300px; 
+    object-fit: cover; 
+    border-radius: 5px;
+    transition: opacity 0.3s ease;
 }
 
 
