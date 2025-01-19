@@ -31,7 +31,7 @@
     <main>
         <div class="container">
             <h1>Reserve An Appointment</h1>
-            <form action="/api/contact" method="POST" class="contact-form">
+            <form id="contact-form" action="/api/contact" method="POST" class="contact-form">
                 <div class="form-group row">
                     <div class="col">
                         <label for="name">Full Name</label>
@@ -81,6 +81,7 @@
             </div>
         </div>
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <script>
         document.getElementById('contact-form').addEventListener('submit', function(e) {
@@ -106,6 +107,6 @@
                 alert('There was an error submitting the form. Please try again.');
             });
         });
-        </script>
+    </script>
 </body>
 </html>
