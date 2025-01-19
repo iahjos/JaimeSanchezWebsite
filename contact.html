@@ -82,5 +82,30 @@
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();  // Prevent the default form submission
+        
+            const form = e.target;
+            const formData = new FormData(form);  // Create FormData from the form
+        
+            // Send form data using Fetch API
+            fetch('/api/contact', {
+                method: 'POST',
+                body: formData  // Send the FormData
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.message) {
+                    alert(data.message);  // Show success message
+                    window.location.href = '/';  // Redirect to the home page (or original page)
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('There was an error submitting the form. Please try again.');
+            });
+        });
+        </script>
 </body>
 </html>
