@@ -1,0 +1,137 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; 
+    min-height: 100vh; 
+    font-family: 'Tinos', sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    padding-left: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    color: #333 !important;
+    text-decoration: none;
+}
+
+.navbar-collapse {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbar-brand:hover {
+    color: gray !important;
+}
+
+.navbar-nav .nav-link {
+    color: #555 !important;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: black !important;
+}
+
+/* Main content area */
+main {
+    padding: 20px; /* Add padding around the gallery */
+    background-color: #f8f8f8; /* Optional: Light background for contrast */
+}
+
+.text {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    margin-bottom: 80px;
+}
+  
+/* Gallery Grid */
+.gallery {
+    display: grid; /* Use CSS Grid for layout */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive column sizes */
+    gap: 15px; /* Space between photos */
+    justify-items: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+}
+
+/* Individual Images */
+.gallery img {
+    width: 100%; /* Make each photo fill its grid cell */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    background-color: white; /* Optional: White background for photos */
+    padding: 5px; /* Create a white "border" effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+}
+
+/* Hover Effect */
+.gallery img:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+/* Footer */
+footer {
+    background-color: gray;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+    flex-shrink: 0; 
+}
+
+.footer-inner {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 0 20px; 
+}
+
+.footer-info {
+    font-size: 15px;
+    text-align: left; 
+}
+
+.footer-links {
+    text-align: right; 
+}
+
+.footer-links a img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+.footer-links a img:hover {
+    transform: scale(1.2);
+}
+
+/* Responsive Adjustments */
+@media (max-width:1000px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .footer-info {
+        font-size: 12px;
+    }
+
+    .footer-links a img {
+        width: 24px;
+        height: 24px;
+    }
+}

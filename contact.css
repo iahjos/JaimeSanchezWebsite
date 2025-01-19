@@ -1,0 +1,163 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; 
+    min-height: 100vh; 
+    font-family: 'Tinos', sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    padding-left: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    color: #333 !important;
+    text-decoration: none;
+}
+
+.navbar-collapse {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbar-brand:hover {
+    color: gray !important;
+}
+
+.navbar-nav .nav-link {
+    color: #555 !important;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: black !important;
+}
+
+/* Main Content */
+main {
+    display: flex;
+    flex-direction: column;
+    height: 85vh;
+    justify-content: center;
+    background-color: #f0f0f0; /* Soft, off-white */
+}
+
+/* Form Row Layout */
+.form-group.row {
+    display: flex; /* Flexbox to display the elements side by side */
+    gap: 20px; /* Space between the fields in each row */
+    margin-bottom: 20px; /* Space between rows */
+}
+
+/* Column Styling */
+.col {
+    flex: 1; /* Make each column take equal space */
+}
+
+/* Styling for the Service dropdown */
+#service {
+    width: 100%; /* Make the dropdown fill the container */
+    padding: 10px 40px 10px 10px; /* Add padding and space for the arrow */
+    border-radius: 5px; /* Rounded corners */
+    border: 1px solid #ccc; /* Light border */
+    background-color: #fff; /* White background */
+    font-size: 1rem; /* Adjust font size */
+    position: relative; /* To position the custom arrow */
+}
+
+/* General input styling */
+.form-control {
+    width: 100%; /* Ensure inputs and textareas fill their containers */
+    padding: 10px; /* Add padding for inputs */
+    border-radius: 5px; /* Rounded corners */
+    border: 1px solid #ccc; /* Light border */
+    font-size: 1rem; /* Adjust font size */
+}
+
+/* Description field (textarea) */
+textarea {
+    resize: vertical; /* Allow vertical resizing of the description field */
+}
+
+/* Submit button */
+.btn {
+    margin-top: 20px; /* Space above the submit button */
+    padding: 10px 20px; /* Button padding */
+    font-size: 1.2rem; /* Adjust button font size */
+    background-color: transparent; /* Make the background transparent */
+    color: #333; /* Set the text color to a dark gray */
+    border: 2px solid #333; /* Add a border that matches the text color */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover effect */
+.btn:hover {
+    background-color: gray; /* Dark gray background on hover */
+    color: white; /* Change text color to white on hover */
+}
+
+
+/* Footer */
+footer {
+    background-color: gray;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+    flex-shrink: 0; 
+}
+
+.footer-inner {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 0 20px; 
+}
+
+.footer-info {
+    font-size: 15px;
+    text-align: left; 
+}
+
+.footer-links {
+    text-align: right; 
+}
+
+.footer-links a img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+.footer-links a img:hover {
+    transform: scale(1.2);
+}
+
+
+/* Responsive Adjustments */
+@media (max-width:1000px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .footer-info {
+        font-size: 12px;
+    }
+
+    .footer-links a img {
+        width: 24px;
+        height: 24px;
+    }
+}

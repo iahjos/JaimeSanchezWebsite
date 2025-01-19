@@ -1,0 +1,203 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; 
+    min-height: 100vh; 
+    font-family: 'Tinos', sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    padding-left: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    color: black !important;
+    text-decoration: none;
+}
+
+.navbar-collapse {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbar-brand:hover {
+    color: rgb(71, 71, 71) !important;
+}
+
+.navbar-nav .nav-link {
+    color: rgb(38, 38, 38) !important;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: black !important;
+}
+
+/* Main Content */
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Ensure the carousel occupies the full height of the viewport */
+#carouselExample {
+    height: 90vh; /* Set the carousel to take the full viewport height */
+    overflow: hidden; /* Hide any overflow if images are larger than the container */
+}
+  
+/* Style for each carousel item (image) */
+.carousel-item {
+height: 100vh; /* Ensure the carousel item fills the full height of the screen */
+}
+
+/* Style for images to fill the container */
+.carousel-item img {
+width: 100%; /* Make the image take the full width of the carousel */
+height: 100%; /* Make the image take the full height of the carousel */
+object-fit: cover; /* Ensure the image covers the area without distortion */
+}
+  
+/* Middle Section */
+.middle {
+    height: 90vh; /* Occupy 80% of the viewport height */
+    display: flex;
+    flex-direction: column; /* Stack heading and images vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    background-color: #f0f0f0; /* Optional background color */
+    text-align: center;
+    overflow: hidden; /* Prevent images from spilling outside */
+}
+  
+.middle h2 {
+  margin-bottom: 20px 0;
+  font-size: 2.5rem;
+}
+
+.scroll-images {
+  display: flex;
+  gap: 20px; /* Space between images */
+  margin: 30px 0;
+}
+
+.scroll-image {
+  width: 500px;
+  height: auto;
+  opacity: 0; /* Initially hidden */
+  transform: translateX(100%); /* Start off-screen to the right */
+  transition: opacity 1.5s ease-out, transform 0.8s ease-out;
+}
+
+.scroll-image.animate {
+  opacity: 1; /* Make the image visible */
+  transform: translateX(0); /* Slide into position */
+}
+
+/* Showcase Section */
+.showcase {
+  display: flex;
+  height: 80vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  background-image: url('snapshots.jpg'); /* Set the background image */
+  background-size: cover; /* Ensure the image covers the entire div */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+}
+
+.showcase .text {
+  z-index: 1; /* Ensure the text and button are above the background */
+  color: white; /* Set text color to white */
+}
+
+.showcase h2 {
+  font-size: 3rem;
+  margin-bottom: 80px;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6); /* Add shadow to the text */
+}
+
+.showcase .btn {
+  padding: 10px 30px;
+  font-size: 1.25rem;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for the button */
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.showcase .btn:hover {
+  background-color: rgba(0, 0, 0, 0.7); /* Darker background on hover */
+}
+
+.showcase img {
+  display: none; /* Hide the image inside the div */
+}
+
+  
+/* Footer */
+footer {
+    background-color: gray;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+    flex-shrink: 0; 
+}
+
+.footer-inner {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 0 20px; 
+}
+
+.footer-info {
+    font-size: 15px;
+    text-align: left; 
+}
+
+.footer-links {
+    text-align: right; 
+}
+
+.footer-links a img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+.footer-links a img:hover {
+    transform: scale(1.2);
+}
+
+
+/* Responsive Adjustments */
+@media (max-width:1000px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .footer-info {
+        font-size: 12px;
+    }
+
+    .footer-links a img {
+        width: 24px;
+        height: 24px;
+    }
+}
